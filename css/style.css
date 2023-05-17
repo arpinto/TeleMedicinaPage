@@ -51,6 +51,8 @@ a {
     height: 8vh;
   
   }
+
+/* Nav-Header */ 
   
   .nav-list {
     list-style: none;
@@ -149,6 +151,14 @@ a {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
+  /* Main-Team-Page */
+  .main-team {
+    background-color: #8037c921;
+    padding: 50px;
+    
+  }
+
+  /* Footer */
 .footer-link {
     text-decoration: none;
 }
