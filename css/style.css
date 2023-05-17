@@ -75,7 +75,7 @@ a {
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: black;
     margin: 8px;
     transition: 0.3s;
   }
@@ -114,8 +114,16 @@ a {
       color: black;
     }
   
-    .mobile-menu div{
-      background-color: #110e0e;
+
+    .header.mobile-menu-open {
+        background-color: black;
+      }
+    .header.mobile-menu-open a {
+        color: white;
+    }
+
+    .header.mobile-menu-open .mobile-menu div{
+        background-color: white;
     }
   }
   
