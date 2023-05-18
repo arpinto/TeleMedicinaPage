@@ -238,13 +238,6 @@ a {
     gap: 50px;
   }
 
-  @media screen and (max-width: 800px) {
-    .responsive-labtel {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
   @media screen and (max-width: 1150px) {
     .sub-team{
       display: flex;
@@ -256,12 +249,6 @@ a {
       flex-direction: column;
     }
   }
-  @media screen and (max-width: 800px) {
-    .responsive-att {
-      display: flex;
-      flex-direction: column;
-    }
-  }
 
   @media screen and (max-width: 800px) {
     .sub-team{
@@ -270,6 +257,14 @@ a {
       justify-content: center;
     }
     .responsive-res {
+      display: flex;
+      flex-direction: column;
+    }
+    .responsive-att {
+      display: flex;
+      flex-direction: column;
+    }
+    .responsive-labtel {
       display: flex;
       flex-direction: column;
     }
