@@ -8,6 +8,7 @@
 }
 
 body {
+    display: grid;
     grid-template-areas: "header header header"
     "main main aside"
     "footer footer footer";
@@ -19,30 +20,35 @@ header{
 
 main{
     grid-area: main;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 aside{
     grid-area: aside;
+    background-color: #1da1f2;
 }
-
-
 
 footer {
     grid-area: footer;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-a {
+header a {
     color: #110e0e;
     text-decoration: none;
     transition: 0.3s;
   }
   
-  a:hover {
+header a:hover {
     opacity: 0.7;
   }
   
-  .logo {
+.logo {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -288,4 +294,11 @@ a {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
+}
+
+.inicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
