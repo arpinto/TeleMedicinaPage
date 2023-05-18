@@ -122,6 +122,10 @@ a {
     .header.mobile-menu-open .mobile-menu div{
         background-color: white;
     }
+
+    .teste{
+      overflow-x: hidden;
+    }
   }
   
   .nav-list.active {
@@ -156,31 +160,43 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1da0f236;
-    gap: 50px;
   }
 
-  .coord-team-ic,.main-team-labtel{
+  .main-team-incod {
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .coord-team-ic {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+  }
+
+  .main-team-labtel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
   }
 
   .coord-team-lb, .inf-man, .dev-man, .sup-anl{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
-  .att-team {
+  .att-team, .res-team {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .sub-team {
     justify-content: space-between;
-    background-color: #e712123a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,12 +216,50 @@ a {
   .ind-serv {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    align-items: center;
   }
 
-  .teste {
+  .responsive-res {
     display: flex;
     flex-direction: row;
     gap: 50px;
+  }
+
+  .responsive-att {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .sub-team{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .responsive-res {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .responsive-att {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .sub-team{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .responsive-res {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   /* Footer */
