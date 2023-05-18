@@ -220,6 +220,12 @@ a {
     align-items: center;
   }
 
+  .responsive-labtel{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
   .responsive-res {
     display: flex;
     flex-direction: row;
@@ -230,6 +236,13 @@ a {
     display: flex;
     flex-direction: row;
     gap: 50px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .responsive-labtel {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media screen and (max-width: 1150px) {
