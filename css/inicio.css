@@ -24,6 +24,7 @@ main{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+    min-height: 100vh;
 }
 
 aside{
@@ -33,9 +34,6 @@ aside{
 
 footer {
     grid-area: footer;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 header a {
@@ -300,5 +298,7 @@ header a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #7f37c9;
+  gap: 50px;
 
 }
