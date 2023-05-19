@@ -29,7 +29,6 @@ main{
 
 aside{
     grid-area: aside;
-    background-color: #1da1f2;
 }
 
 footer {
@@ -157,6 +156,85 @@ header a:hover {
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+/* editando o aside    */
+.aside-container {
+  padding: 6rem 2rem;
+}
+
+.aside-img{
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  gap: 5rem;
+}
+
+.aside-conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.aside-conteudo p{
+  font-size: 12px;
+}
+.aside-conteudo h3{
+  font-size: 15px;
+  color: #a8a29e;
+}
+
+/* linha */
+.aside-line{
+  width: 70px;
+  height: 1px;
+  border: solid 1px #a8a29e;
+  border-radius: 20%;
+}
+
+/* tamanho das imagens */
+
+#CET{
+  width: 15rem;
+}
+#GRAFICO{
+  width: 15rem;
+}
+#MOBILE{
+  width: 15rem;
+}
+#INF{
+  width: 15rem;
+}
+
+/* responsivo aside */
+
+@media screen and (max-width: 999px) {
+  .aside-container{
+    #CET{
+      width: 10rem;
+    }
+    #GRAFICO{
+      width: 10rem;
+    }
+    #MOBILE{
+      width: 10rem;
+    }
+    #INF{
+      width: 10rem;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 700px) { 
+  .aside-container {
+    display: none;
+
+  }
+}
 
 .footer-link {
     text-decoration: none;
