@@ -11,21 +11,90 @@ body {
     grid-template-areas: "header header header"
     "main main main"
     "footer footer footer";
+    background-color: azure;
 }
 
 header{
     grid-area: header;
-    border-bottom: #110e0e solid 2px;
-  }
 
-main{
-    grid-area: main;
+
+main {
+  grid-area: main;
+  margin: 50px;
+}
+ /* geral de noticias */
+.main-noticias {
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
 }
 
+.main-noticias-titulo {
+  font-size: 35px;
+  color: rgb(23, 71, 110);
+  margin-top: 50px;
+}
+
+.main-noticias-titulo:hover {
+  color:#4267b3;
+}
+
+.main-noticias-paragrafo {
+  font-size: 25px;
+}
+
+.main-noticias-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-noticias-info {
+  font-size: 20px;
+  color: gray;
+}
+
+/* primeira noticia */
+#main-noticia1 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(23, 71, 110);
+}
+
+.main-noticias-imagem1 {
+  width: 500px;
+  margin: 20px;
+}
+
+/* segunda noticia */
+#main-noticia2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(23, 71, 110)
+}
+
+.main-noticias-imagem2 {
+  width: 500px;
+  margin: 20px;
+}
+
+/* terceira noticia */
+#main-noticia3 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(23, 71, 110);
+}
+
+<
 
 footer {
     grid-area: footer;
-
+    border-top: 2px solid rgb(23, 71, 110);
 }
 
   header a {
@@ -148,6 +217,10 @@ footer {
     .header.mobile-menu-open .mobile-menu div{
         background-color: white;
     }
+
+    .teste{
+      overflow-x: hidden;
+    }
   }
   
   header .nav-list.active {
@@ -179,17 +252,55 @@ footer {
 
 /* Main-Team-Page */
   .main-team-page {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1da0f236;
-    
+    padding-top: 75px;
+    padding-bottom: 85px;
   }
 
-  .coord-team {
+  .main-team-incod {
+    font-family: 'Roboto', sans-serif;  
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .coord-team-ic {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+  }
+
+  .main-team-labtel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 25px;
+  }
+
+  .coord-team-lb, .inf-man, .dev-man, .sup-anl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .att-team, .res-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub-team {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 1150px;
   }
 
   .ph-photo-man{
@@ -197,9 +308,89 @@ footer {
     width: 350px;
   }
 
-  .name-servant {
+  .name-serv {
     color: #110e0e;
   }
+
+  .ind-serv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .responsive-labtel{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .responsive-res {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .responsive-att {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .line-separation-m {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #00000079;
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+  }
+
+  .line-separation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #00000079;
+    width: 500px;
+    height: 5px;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .sub-team{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .responsive-res {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .line-separation {
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .sub-team{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .responsive-res {
+      display: flex;
+      flex-direction: column;
+    }
+    .responsive-att {
+      display: flex;
+      flex-direction: column;
+    }
+    .responsive-labtel {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   /* Footer */
 .footer-link {
     text-decoration: none;
