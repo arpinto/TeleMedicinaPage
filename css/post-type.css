@@ -22,9 +22,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: rgba(138, 138, 138, 0.256); */
 }
 
+/* lista de tipos de postagens */
 .post-tipe {
   background-color: azure;
   display: flex;
@@ -64,7 +64,7 @@ main{
   background-color: black;
   color: white; 
 }
-
+/* final da lista */
 
 footer {
     grid-area: footer;
