@@ -22,7 +22,10 @@ class MobileNavbar {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
-    }
+
+    const header = document.querySelector("header");
+    header.classList.toggle("mobile-menu-open");
+  }
   
     addClickEvent() {
       this.mobileMenu.addEventListener("click", this.handleClick);
