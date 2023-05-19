@@ -90,8 +90,6 @@ main {
   border-bottom: 1px solid rgb(23, 71, 110);
 }
 
-<
-
 footer {
     grid-area: footer;
     border-top: 2px solid rgb(23, 71, 110);
@@ -197,7 +195,7 @@ footer {
     }
     header .mobile-menu {
       display: block;
-    }
+        }
   
     header a {
       color: white;
@@ -216,10 +214,6 @@ footer {
 
     .header.mobile-menu-open .mobile-menu div{
         background-color: white;
-    }
-
-    .teste{
-      overflow-x: hidden;
     }
   }
   
