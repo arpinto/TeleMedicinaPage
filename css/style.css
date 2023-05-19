@@ -16,7 +16,7 @@ body {
 
 header{
     grid-area: header;
-
+}
 
 main {
   grid-area: main;
