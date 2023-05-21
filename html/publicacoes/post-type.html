@@ -1,0 +1,103 @@
+<!-- teste -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicações</title>
+    <link rel="stylesheet" href="../css/post-type.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header class="header">
+        <nav>
+            <a class="logo" href="#">Telemedicina</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#" id="button-post">Publicações</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Lista de tipos de postagens -->
+        <div class="post-tipe">
+            <ul>
+                <!-- Cada link será direcionado para as respectivas páginas html com os mesmos nomes -->
+                <li><a href="http://127.0.0.1:5502/html/journal.html" id="journals"> Periódicos</a></li>
+                <li><a href="#conferences" id="conferences"> Conferências </a></li>
+                <li><a href="#manuals" id="manuals"> Manuais </a></li>
+                <li><a href="#books" id="books"> Livros e Apostilas</a> </li>
+                <li><a href="#reports" id="reports"> Relatorios Técnicos </a></li>
+                <li><a href="#promotion" id="promotion"> Material de Divilgação</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <!-- todo o footer -->
+        <div class="footer-container">
+            <!-- div de contatos -->
+            <div class="footer-contacts">
+                <img class="logo" src="../assets/img/logo_stt.png" alt="logo">
+                <div class="footer-media">
+                <!-- os icones que estou usando é do link font font-awesome -->
+                    <a class="footer-link" href="" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer-link" href="" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer-link" href=""id="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer-link" href="" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- listas -->
+            <ul class="footer-list">
+                <h4>SOBRE</h4>
+                <li><a class="footer-link" href="#">Sobre</a></li>
+                <li><a class="footer-link" href="#">Comunicação</a></li>
+                <li><a class="footer-link" href="#">Serviços</a></li> 
+            </ul>
+            <ul class="footer-list">
+                <h4>COMUNICAÇÃO</h4>
+                <li><a class="footer-link" href="#">link 1</a></li>
+            </ul>
+            <ul class="footer-list">
+                <h4>SERVIÇOS</h4>
+                <li><a class="footer-link" href="#">link2 </a></li>
+            </ul>
+
+            <!-- mandar o email -->
+            <div class="footer-email">
+                <h4>ENTRE EM CONTATO</h4>
+
+                <p>
+                    Deixe seu email para contato.
+                </p>
+                <div class="footer-inp">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                    
+                </div>
+                <p>
+                    Ou se preferir <br>Entre em contato com: <br> <a class="footer-text-email"href="mailto:matheusfaustinott@gmail.com">telemedicina@mail.com.br</a>
+                </p>
+            </div>    
+        </div>
+
+        <!-- copyright -->
+        <div class="footer-copyright">
+            &#169
+            2023 Todos Direitos Reservados
+        </div>
+    </footer>
+</body>
+<script src="../js/scripts.js"></script>
+</html>
