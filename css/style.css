@@ -168,10 +168,8 @@ footer {
   }
 
   header .dropdown-content a:hover {background-color: #ddd;}
-
-  header .dropdown_publi:hover .dropdown-content {display: block;}
   
-  @media (max-width: 999px) {
+  @media screen and (max-width: 999px) {
     body {
       overflow-x: hidden;
     }
@@ -215,6 +213,32 @@ footer {
     .header.mobile-menu-open .mobile-menu div{
         background-color: white;
     }
+
+    header .dropdown-content {
+      position: static;
+      display: none;
+      background-color: #4e4d4d;
+    }
+
+    header .dropdown-btn{
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      border: none;
+      background: none;
+      width: 100%;
+    }
+
+    header .dropdown-content a:hover {background-color: #242323;}
+    
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+      margin-left: 10px;
+    }
+
   }
   
   header .nav-list.active {
@@ -243,6 +267,178 @@ footer {
   header .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+/*SOBRE*/
+
+.sobre{
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+}
+
+.texto_sobre{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.bloco_sobre{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto_sobre p{
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.texto_sobre h1{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.sobre img{
+  width: 55vh;
+}
+
+.visão{
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15%;
+}
+
+.texto_visão{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  text-align: justify;
+  align-self: center;
+}
+
+.bloco_visão{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto_visão p{
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.texto_visão h1{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.visão img{
+  width: 45vh;
+}
+
+.objetivo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 20%;
+  padding: 3%;
+  background-image: linear-gradient(to bottom, transparent 50%,  #383c3d 50%);
+  gap:60px
+}
+
+.objetivo h1{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+.texto_objetivo{
+  display: flex;
+  justify-content:space-between;
+  gap: 20px;
+}
+
+.bloco_objetivo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+  padding: 2%;
+  background-color: #bbe8ff;
+  text-align: center;
+}
+
+
+@media (max-width: 999px){
+  .sobre{
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 50px;
+  }
+
+  .texto_sobre{
+    gap:50px;
+  }
+
+  .sobre img{
+    width: auto;
+    height: 60vh;
+  }
+  .visão{
+    overflow-x: hidden;
+    display:flex;
+    flex-direction:column-reverse;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 50px;
+    justify-items: center;
+
+  }
+  
+  .texto_visão{
+    gap:50px;
+    margin-left: 0%;
+    justify-items: center;
+  }
+  
+  .visão img{
+    width: auto;
+    height: 60vh;
+  }
+
+  .objetivo{
+    overflow-x: hidden;
+    display:flex;
+    flex-direction:column;
+    background-image: none;
+  }
+  
+  .texto_objetivo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .bloco_objetivo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    background-color: #bbe8ff;
+    text-align: center;
+  }
+}
+
 
 /* Main-Team-Page */
   .main-team-page {
