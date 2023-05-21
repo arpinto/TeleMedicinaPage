@@ -24,13 +24,13 @@ main{
     align-items: center;
 }
 
-/* lista de periódicos */
+/* lista de publicações */
 .content {
   background-color: azure;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 65vmax;
+  width: 64.2vmax;
   padding-bottom: 4vh;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -48,16 +48,16 @@ main{
 }
 
 #describing {
-  padding-bottom: 5vh;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.149);
+  padding-bottom: 3vh;
 }
 
-.block {
+.publication {
   display: flex;
   flex-direction: row;
   justify-content: top;
   align-items: center;
   padding: 5px;
+  margin-top: 2vh;
   margin-left: 6vh;  
   margin-right: 6vh;
   width: 40vmax;
@@ -67,26 +67,30 @@ main{
   font-size: 3vh;
 }
 
-.block h5 {
-  color: #5c5c5c;
-  padding: 1px 7px;
-  font-size: 22px;
-  margin: 0.5vh;
-  border: 2px solid rgba(0, 0, 0, 0.216);
-  border-radius: 50px;
-  background-color: #f5f5f5b2;
-  margin-right: 15px;
-}
-
-.block p {
+.publication p {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
-  border: 2px solid rgba(0, 0, 0, 0.086);
+  border: 2px solid rgba(0, 0, 0, 0.43);
   border-radius: 5px;
   background-color: #f5f5f5b2;
   padding: 10px;
-  margin-top: 5vh;
+  padding-left: 15px;
+  margin-top: 1vh;
+  margin-left: 1.5vmax;
 }
 
+.publication p a {
+  text-decoration: none;
+}
+
+.publication p a:hover {
+  text-decoration:underline;
+}
+
+.publication p a:active {
+  color:rgb(0, 112, 198)
+}
 /* fim da lista */
 
 footer {
