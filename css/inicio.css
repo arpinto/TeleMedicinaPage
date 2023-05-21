@@ -22,8 +22,6 @@ header{
 main{
     grid-area: main;
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 5%;
     min-height: 100vh;
 }
@@ -108,8 +106,7 @@ footer {
 
   header .dropdown-content a:hover {background-color: #ddd;}
 
-  header .dropdown_publi:hover .dropdown-content {display: block;}
-  
+
   @media (max-width: 999px) {
     body {
       overflow-x: hidden;
@@ -154,10 +151,37 @@ footer {
     .header.mobile-menu-open .mobile-menu div{
         background-color: white;
     }
+
+    header .dropdown-content {
+      position: static;
+      display: none;
+      background-color: #4e4d4d;
+    }
+
+    header .dropdown-btn{
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      border: none;
+      background: none;
+      width: 100%;
+    }
+
+    header .dropdown-content a:hover {background-color: #242323;}
+    
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+      margin-left: 10px;
+    }
+    
   }
   
   header .nav-list.active {
     transform: translateX(0);
+
   }
   
   @keyframes navLinkFade {
@@ -398,11 +422,71 @@ footer {
     }
 }
 
+/* INICIO */
+
 .inicio{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7f37c9;
-  gap: 50px;
+  margin-left: 10%;
+  margin-right: 5%; 
+  margin-top: 5%;
+  gap: 70px;
 
+}
+
+.inicio h1{
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.inicio h1 span{
+  color: #1da1f2;
+}
+
+.texto_inicio{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  border-left: 2px solid black ;
+  padding-left: 2%;
+}
+
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-right: 10%;
+  margin-left: 10%;
+
+
+}
+
+.bloco img{
+  width: 100%;
+  height: 50%;
+  align-self: center;
+}
+
+.mais{
+    display: inline-block;
+    padding: 10px;
+    max-width: 20%;
+    text-align: center;
+    align-self: center;
+    background-color:#1da1f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+}
+
+.mais:hover{
+  background-color:#1da0f2c0;
+  color: white;
 }
