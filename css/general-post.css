@@ -18,22 +18,23 @@ header{
   }
 
 main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(230, 229, 229, 0.193);
 }
 
 /* lista de publicações */
 .content {
-  background-color: azure;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 68.2vmax;
+  width: 64.5vmax;
   padding-bottom: 4vh;
-  border-left: 1px solid rgb(23, 71, 110);
-  border-right: 1px solid rgb(23, 71, 110);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 /* título da página */
