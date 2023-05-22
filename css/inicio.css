@@ -490,3 +490,7 @@ footer {
   background-color:#1da0f2c0;
   color: white;
 }
+
+.nav-list li a.selected {
+  color: #4ab5fc;
+}
