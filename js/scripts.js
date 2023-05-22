@@ -25,6 +25,7 @@ class MobileNavbar {
 
     const header = document.querySelector("header");
     header.classList.toggle("mobile-menu-open");
+
   }
   
     addClickEvent() {
@@ -60,3 +61,24 @@ class MobileNavbar {
       }
     });
   }
+
+
+// Obtém a lista de elementos de link do cabeçalho
+var headerLinks = document.querySelectorAll('.nav-list li a');
+
+// Obtém a URL da página atual
+var currentPageURL = window.location.href;
+
+// Itera sobre os elementos de link
+for (var i = 0; i < headerLinks.length; i++) {
+    var link = headerLinks[i];
+    var linkURL = link.href;
+
+    // Verifica se o link corresponde à página atual
+    if (currentPageURL === linkURL) {
+        link.classList.add('selected'); // Adiciona a classe 'selected' ao link correspondente
+        break; // Encerra o loop, pois a opção foi encontrada
+    }
+}
+
+

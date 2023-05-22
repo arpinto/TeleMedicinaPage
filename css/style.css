@@ -735,3 +735,7 @@ footer {
         padding: 3rem 2rem;
     }
 }
+
+.nav-list li a.selected {
+  color: #4ab5fc;
+}
