@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../css/landingpage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#">Telemedicina</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Publicações</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Landing page-->
+    <main id="landing-page">
+         <!--background cover-->
+        <div class="background-overlay"></div>  
+       <!--carrossel de imagens-->
+        <section class="galery"> 
+            <div class="fotos">
+                <img src="../assets/img/imagensbg1.png" alt="imagem 1">
+                <img src="../assets/img/imagensbg2.jpg" alt="imagem 2">
+                <img src="../assets/img/imagensbg3.jpg" alt="imagem 3">
+                <img src="../assets/img/imagensbg4.jpg" alt="imagem 4">
+                <!--repete a foto 1 para dar sensação de continuidade-->
+                <img src="../assets/img/imagensbg1.png" alt="imagem 1">
+        </section>
+        </div>
+        <!--Texto-->
+        <div class="content">
+            <div id="landing-page-content">
+                <h2>Sistema de Telemedicina e Telessaúde</h2>
+            </div>
+            <div class="texto-formulario">
+                <div class = "texto">
+                    <h3 class="texto-form-titulo">Cadastre-se para receber notícias sobre o nosso sistema</h3>
+                    <p class="texto-form-paragrafo">Adicione seu nome e e-mail para receber notícias e novidades sobre o STT diretamente no seu e-mail.</p>
+                </div>
+                <!--Formulário-->
+                <div class="caixa-formulario">
+                <form action="#">
+                    <input type="text" name="Nome" placeholder="Digite seu nome aqui" class="formulario" required autofocus> <br> <!--PLACEHOLDER= serve para adicionar o texto dentro do input e REQUIRED determina que é um campo obrigatório-->
+                    <input type="email" name="email" placeholder="Digite seu email aqui" class="formulario" required> <br>
+                    <input class="texto-form-botao"type="submit" value="Cadastrar" id="formulario-botao"> <!--VALUE= serve para mudar o que está escrito dentro do input submit-->
+                </form>
+            </div>
+            </div>
+        </div>
+    </main>   
+    <script src="../js/scripts.js"></script>
+</body>
+</html> 
