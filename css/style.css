@@ -358,7 +358,7 @@ footer {
 }
 
 .visão img{
-  width: 45vh;
+  width: 50vh;
 }
 
 .objetivo{
@@ -390,7 +390,7 @@ footer {
   gap: 20px;
   width: 20%;
   padding: 2%;
-  background-color: #bbe8ff;
+  background-color: #bbddfd;
   text-align: center;
 }
 
@@ -453,7 +453,6 @@ footer {
     flex-direction: column;
     gap: 20px;
     width: auto;
-    background-color: #bbe8ff;
     text-align: center;
   }
 }
