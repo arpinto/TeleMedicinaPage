@@ -18,10 +18,11 @@ header{
   }
 
 main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(230, 229, 229, 0.193);
 }
 
 /* "Desativação" do botão publicações */
@@ -35,14 +36,14 @@ main{
 
 /* lista de tipos de postagens */
 .post-tipe {
-  background-color: azure;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 64.5vmax;
   padding-bottom: 4vh;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 .post-tipe li {
