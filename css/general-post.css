@@ -375,7 +375,7 @@ header .mobile-menu.active .line3 {
     gap: 0.9rem;
 }
 .footer-email .footer-text-email {
-    color: #d66316;
+    color: #2316d6;
 }
 
 .footer-inp {
@@ -412,7 +412,6 @@ header .mobile-menu.active .line3 {
 .footer-copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--color-neutral-0);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
