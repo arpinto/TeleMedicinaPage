@@ -32,18 +32,21 @@ main {
 }
 
 .main-noticias-titulo {
-  font-size: 120%;
-  color: rgb(23, 71, 110);
+  font-size: 160%;
+  /*color: rgb(23, 71, 110);*/
+  color: #110e0e;
   margin-top: 50px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-noticias-titulo:hover {
-  color:#4267b3;
+  color: rgb(23, 71, 110);
 }
 
 
 .main-noticias-paragrafo {
-  font-size: 100%;
+  font-size: 110%;
 }
 
 .main-noticias-texto {
