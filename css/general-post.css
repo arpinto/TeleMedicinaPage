@@ -375,7 +375,7 @@ header .mobile-menu.active .line3 {
     gap: 0.9rem;
 }
 .footer-email .footer-text-email {
-    color: #d66316;
+    color: #2316d6;
 }
 
 .footer-inp {
@@ -394,9 +394,9 @@ header .mobile-menu.active .line3 {
 }
 
 .footer-inp button {
-    background-color: #7f37c9;
+    background-color: #000000;
     border: none;
-    color:#1da1f2 ;
+    color:#ffffff ;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
@@ -412,7 +412,6 @@ header .mobile-menu.active .line3 {
 .footer-copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--color-neutral-0);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;

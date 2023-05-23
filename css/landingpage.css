@@ -31,60 +31,60 @@ main{
 /*nav*/
 header a {
   color: black;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
 header a:hover {
   color: #4ab5fc;
   text-decoration:overline;
-}
-
+  }
+  
 header .logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: transparent;
-  height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    height: 8vh;
 
-}
-
+  }
+  
 /* Nav-Header */ 
 
 header .nav-list {
-  list-style: none;
-  display: flex;
-}
-
+    list-style: none;
+    display: flex;
+  }
+  
 header .nav-list li {
-  letter-spacing: 2px;
-  margin-left: 32px;
-}
-
+    letter-spacing: 2px;
+    margin-left: 32px;
+  }
+  
 header .mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
+    display: none;
+    cursor: pointer;
+  }
+  
 header .mobile-menu div {
-  width: 32px;
-  height: 2px;
+    width: 32px;
+    height: 2px;
   background: black;
-  margin: 8px;
-  transition: 0.3s;
-}
-
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
 header .dropdown_publi{
   position: relative;
   display: inline-block;
 }
-
+ 
 header .dropdown-content{
   display: none;
   position: absolute;
@@ -93,59 +93,59 @@ header .dropdown-content{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
+ 
 header .dropdown-content a{
   color: black;
   text-decoration: none;
   padding: 12px 16px;
   display: block;
 }
-
+ 
 header .dropdown-content a:hover {background-color: #ddd;}
-
+ 
 .dropdown_publi:hover .dropdown-content {display: block;}
-
+ 
 @media screen and (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
+    body {
+      overflow-x: hidden;
+    }
   header .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    flex-direction: column;
-    margin-left: 20px;
-    align-items: left;
-    transform: translateX(100%);
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      flex-direction: column;
+      margin-left: 20px;
+      align-items: left;
+      transform: translateX(100%);
     transition: transform 0s ease-in;
-  }
+    }
   header .nav-list li {
-    margin-top: 20px;
-    opacity: 0;
-    font-size: 20px
-  }
+      margin-top: 20px;
+      opacity: 0;
+      font-size: 20px
+    }
   header .mobile-menu {
-    display: block;
-      }
-
+      display: block;
+    }
+  
   header a {
-    color: white;
-  }
-
+      color: white;
+    }
+  
   header .logo{
-    color: black;
-  }
-
+      color: black;
+    }
+  
   .header.mobile-menu-open {
       background-color: black;
     }
   .header.mobile-menu-open a {
       color: white;
   }
-
+  
   .header.mobile-menu-open .mobile-menu div{
       background-color: white;
   }
@@ -159,35 +159,35 @@ header .dropdown-content a:hover {background-color: #ddd;}
   header .dropdown-content a:hover {background-color: #242323;}
 
   .dropdown_publi:hover .dropdown-content {display: none;}
-  
+
 }
 
 header .nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
     transform: translateX(0);
   }
-}
-
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
 header .mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
 header .mobile-menu.active .line2 {
-  opacity: 0;
-}
-
+    opacity: 0;
+  }
+  
 header .mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
 
 /*landing page*/
 #landing-page {
@@ -216,8 +216,15 @@ header .mobile-menu.active .line3 {
     width: 500%;
     animation-name: animacao;
     animation-duration: 30s;
-    animation-iteration-count: infinite;
-}
+    animation-iteration-count: infinite; 
+    display: flex;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94vh;
+  }
+
 .galery .fotos img {
     width: 19.9%;
 }
@@ -242,21 +249,20 @@ header .mobile-menu.active .line3 {
 }
 .content #landing-page-content {
   text-align:center;
-  font-size: 45px;
+  font-size: 300%;
   text-transform: uppercase;
   color: rgb(44, 44, 44);
   text-shadow: 1px 1px rgb(44, 44, 44);
   display: flex;
-  margin-left: 250px;
-  margin-right:20px;
   height: auto;
 }
 
 /*Textos do formulário*/
 .texto-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content: center;
-  margin-left: 0px;
 }
 .texto-form-titulo{
     text-align: center;
@@ -308,9 +314,40 @@ header .mobile-menu.active .line3 {
   font-size: 17px;
   margin-top: 10px;
 }
-
-.nav-list li a.selected {
-  color: #4ab5fc;
-  pointer-events: none; /* Impede eventos de mouse no elemento */
-  cursor: default; /* Define o cursor como padrão */
+@media screen and (max-width: 1150px) {
+  main {
+  padding: 0%;
+  }
+  .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+  }
+  #landing-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  }
+  h2 {
+  font-size: 120%;
+  text-align: center;
+  }
+  .texto-formulario {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  }
+}
+  .texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+  .nav-list li a.selected {
+    color: #4ab5fc;
+    pointer-events: none; /* Impede eventos de mouse no elemento */
+    cursor: default; /* Define o cursor como padrão */
 }
