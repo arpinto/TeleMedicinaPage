@@ -212,6 +212,8 @@ footer {
   }
 
   header .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown_publi:hover .dropdown-content {display: block;}
   
   @media screen and (max-width: 999px) {
     body {
@@ -264,24 +266,9 @@ footer {
       background-color: #4e4d4d;
     }
 
-    header .dropdown-btn{
-      display: block;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      letter-spacing: 2px;
-      border: none;
-      background: none;
-      width: 100%;
-    }
-
     header .dropdown-content a:hover {background-color: #242323;}
-    
-    .fa-caret-down {
-      float: right;
-      padding-right: 8px;
-      margin-left: 10px;
-    }
+
+    .dropdown_publi:hover .dropdown-content {display: none;}
 
   }
   
@@ -763,4 +750,6 @@ footer {
 
 .nav-list li a.selected {
   color: #4ab5fc;
+  pointer-events: none; /* Impede eventos de mouse no elemento */
+  cursor: default; /* Define o cursor como padrão */
 }
