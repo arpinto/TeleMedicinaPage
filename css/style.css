@@ -694,7 +694,7 @@ footer {
     gap: 0.9rem;
 }
 .footer-email .footer-text-email {
-    color: #d66316;
+    color: #2316d6;
 }
 
 .footer-inp {
@@ -713,9 +713,9 @@ footer {
 }
 
 .footer-inp button {
-    background-color: #7f37c9;
+    background-color: #000000;
     border: none;
-    color:#1da1f2 ;
+    color:#ffffff ;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
