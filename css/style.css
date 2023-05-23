@@ -316,7 +316,7 @@ footer {
   flex-direction: column;
   margin-right: 10%;
   text-align: justify;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .bloco_sobre{
