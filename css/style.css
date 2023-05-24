@@ -482,6 +482,9 @@ footer {
     padding-top: 75px;
     padding-bottom: 85px;
   }
+  .main-team-page a{
+    text-decoration: none
+  }
 
   .main-team-incod {
     font-family: 'Roboto', sans-serif;  
@@ -493,6 +496,29 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+  .coord-team-ic a:hover{
+    color: #1da1f2;
+  }
+  
+  .coord-team-lb a:hover{
+    color: #1da1f2;
+  }
+
+  .inf-man a:hover{
+    color: #1da1f2;
+  }
+
+  .sup-anl a:hover{
+    color: #1da1f2;
+  }
+
+  .dev-man a:hover{
+    color: #1da1f2;
+  }
+
+  .ind-serv a:hover{
+    color: #1da1f2;
   }
 
   .main-team-labtel {
